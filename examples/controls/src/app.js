@@ -15,7 +15,7 @@ import CityInfo from './city-info';
 
 import CITIES from '../../.data/cities.json';
 
-const TOKEN = ''; // Set your mapbox token here
+const TOKEN = 'pk.eyJ1Ijoid2Fzb24iLCJhIjoiY2tndGFhb3ExMW95NDJyczM1aTkwZnlhYyJ9.puvQdY6vh5V4SIExob1n-A'; // Set your mapbox token here
 
 const geolocateStyle = {
   position: 'absolute',
@@ -50,9 +50,9 @@ export default class App extends Component {
     super(props);
     this.state = {
       viewport: {
-        latitude: 37.785164,
-        longitude: -100,
-        zoom: 3.5,
+        latitude: 35.690921,
+        longitude: 139.70025799999996,
+        zoom: 9,
         bearing: 0,
         pitch: 0
       },
@@ -116,7 +116,7 @@ export default class App extends Component {
           <ScaleControl />
         </div>
 
-        <ControlPanel containerComponent={this.props.containerComponent} />
+        {/* <ControlPanel containerComponent={this.props.containerComponent} /> */}
       </MapGL>
     );
   }
